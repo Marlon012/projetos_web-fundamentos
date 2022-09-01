@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Marlon" />
+    <meta name="description" content="descrição, lista de documentos" />
+    <meta name="keywords" content="html5, tecnologia" />
+    <title>Projeto html</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ccc;
+            margin: auto;
+            width: 800px;
+        }
+
+        /*sempre utilizar (class) para formatar elementos no HTML*/
+
+        .menu {
+            text-align: right;
+            
+        }
+        .menu ul{
+            padding: 33px 20px;
+        }
+        .menu ul li{
+            display: inline;  /*alinhar no eixo X*/
+            padding: 12px 20px;
+            background: rgba(156, 152, 152, 0.76);  /*sem cor de fundo*/
+            margin: 5px;
+            border: solid 1px white;
+            
+           
+        }
+        .menu ul li a{
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .hero {
+            background-image: url(../imagens/bg-3.jpg);
+            height: 500px;
+            background-position: right center;
+            /*alinhar para direita e centralizar no centro na vertical*/
+            background-size: cover;
+            /*sempre ocupa a área inteira, mesmo que esconda um pedaço da imagem*/
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            margin: 70px;
+        }
+
+        .hero-content h1 {
+            font-size: 55px;
+            padding-top: 55px;
+            text-shadow: 4px 3px 4px rgb(0, 0, 0);
+            /*deslocamento X (eixo horizontal, para direita) deslocamento Y (eixo vertical, para baixo) porcentagem de esfumaçamento e a cor!*/
+        }
+
+        .hero-content p {
+          
+            font-size: 17px;
+            background:rgba(0, 0, 0, 0.575);
+            padding: 13px;
+            margin: 68px 189px;
+            border-bottom: solid 2px white;
+        }
+
+        main {
+            margin: auto;
+        }
+
+        .content-section {
+            background-color: white;
+            padding-left: 20px;
+            margin: 15px 30px;
+        }
+
+        .content-section header {
+            padding-top: px;
+            background-color: rgb(241, 231, 231);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="principal">
+        <header class="hero">
+            <nav class="menu">
+                <ul class="menu-hero">
+                    <li class="menu-hero-content"><a href="#"> Início</a></li>
+                    <li><a href="#"> Quem sou eu</a></li>
+                    <li><a href="#"> Contato</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+                <h1>CURSO WEB<br>FUNDAMENTOS</h1>
+                <p>Aprende HTML, CSS e Javascript</p>
+            </div>
+        </header>
+        <main>
+            <section class="content-section">
+                <div class="card">
+                    <img src="imagens/card_01.png" alt="" />
+                    <p>SELETORES</p>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/card_02.jpg" alt="" />
+                    <p>POSICIONAMENTO</p>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/card_03.jpg" alt="" />
+                    <p>FONTES E ÍCONES</p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <article>
+                    <header class="header">
+                        <h2>Título do article</h2>
+                    </header>
+                    <p>primeiro paragráfo de exemplo</p>
+                    <p>segundo paragráfo de exemplo</p>
+                </article>
+            </section>
+        </main>
+        <footer class="rodape">
+            copyright &copy; 2022
+        </footer>
+    </div>
+</body>
+
+</html>
